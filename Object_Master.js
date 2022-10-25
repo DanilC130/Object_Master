@@ -55,30 +55,30 @@ const pokémon = Object.freeze([
 ]);
 
 // an array of pokémon objects where the id is evenly divisible by 3
-// const idByThrees = pokémon.filter( p => p.id % 3 === 0 );
-// console.log(idByThrees)
+const idByThrees = pokémon.filter( p => p.id % 3 === 0 );
+console.log(idByThrees)
 
 // an array of pokémon objects that are "fire" type
-// const fireTypeArr = pokémon.filter(p => p.types[0] === "fire")
-// console.log(fireTypeArr)
+const fireTypeArr = pokémon.filter(p => p.types[0] === "fire")
+console.log(fireTypeArr)
 
 // an array of pokémon objects that have more than one type
-// const moreThanOneTypeArr = pokémon.filter(p => p.types > p.types[0])
-// console.log(moreThanOneTypeArr)
+const moreThanOneTypeArr = pokémon.filter(p => p.types > p.types[0])
+console.log(moreThanOneTypeArr)
 
 // // an array with just the names of the pokémon
-// const listOfPokémonNames = pokémon.map(p => p.name)
-// console.log(listOfPokémonNames)
+const listOfPokémonNames = pokémon.map(p => p.name)
+console.log(listOfPokémonNames)
 
 // an array with just the names of pokémon with an id greater than 99
-// const namesWithIdOver99 = pokémon.map(p => p.name[0] > 99)
-// console.log(pokémon.filter(element => element.id > 99).map(element => element.name));
+const namesWithIdOver99 = pokémon.map(p => p.name[0] > 99)
+console.log(pokémon.filter(element => element.id > 99).map(element => element.name));
 
 // an array with just the names of the pokémon whose only type is poison
-// console.log(pokémon.filter(p => p.types[0] === "poison").map(p => p.name));
+console.log(pokémon.filter(p => p.types[0] === "poison").map(p => p.name));
 
 // an array containing just the first type of all the pokémon whose second type is "flying"
-// console.log(pokémon.filter(p => p.types[1] === "flying").map(p => p.types[0]));
+console.log(pokémon.filter(p => p.types[1] === "flying").map(p => p.types[0]));
 
 // a count of the number of pokémon that are "normal" type
-// console.log(pokémon.filter(p => p.types[0] === "normal").length);
+console.log(pokémon.filter(p => p.types[0] === "normal").length);
